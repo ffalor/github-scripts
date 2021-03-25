@@ -62,7 +62,7 @@ for member in members:
 
 # Write report to CSV
 if repo_report_data != []:
-    with open(f"{args.path}repo_report.csv", mode="w", newline='') as csv_file:
+    with open(f"{args.path}/repo_report.csv", mode="w", newline='') as csv_file:
         dict_writer = csv.DictWriter(csv_file, repo_report_headers)
         dict_writer.writeheader()
         dict_writer.writerows(repo_report_data)
@@ -70,7 +70,7 @@ if repo_report_data != []:
 
 # Write report to CSV
 if repo_report_data != []:
-    with open(f"{args.path}user_report.csv", mode="w", newline='') as csv_file:
+    with open(f"{args.path}/user_report.csv", mode="w", newline='') as csv_file:
         dict_writer = csv.DictWriter(csv_file, user_report_headers)
         dict_writer.writeheader()
         dict_writer.writerows(user_report_data)
